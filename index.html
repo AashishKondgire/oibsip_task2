@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exam Admin Dashboard</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h4 class="text-center">Admin Panel</h4>
+    <a href="#">Dashboard</a>
+    <a href="#">Students</a>
+    <a href="#">Exams</a>
+    <a href="#">Results</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2>Dashboard</h2>
+      <button class="btn btn-primary">Logout</button>
+    </div>
+
+    <!-- Welcome Message -->
+    <div class="alert alert-info">
+      <strong>Welcome, Admin!</strong> Here's a quick overview of the examination system.
+    </div>
+
+    <!-- Statistics Cards -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-white bg-primary p-3">
+          <h5>Total Students</h5>
+          <h2>1,200</h2>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-white bg-success p-3">
+          <h5>Exams Scheduled</h5>
+          <h2>12</h2>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-white bg-warning p-3">
+          <h5>Pending Results</h5>
+          <h2>5</h2>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-white bg-danger p-3">
+          <h5>Alerts</h5>
+          <h2>3</h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Exams Table -->
+    <div class="card mb-4">
+      <div class="card-header bg-secondary text-white">
+        Recent Exams
+      </div>
+      <div class="card-body">
+        <table class="table table-bordered table-striped">
+          <thead class="table-light">
+            <tr>
+              <th>Exam Name</th>
+              <th>Date</th>
+              <th>Status</th>
+              <th>Students</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Math Midterm</td>
+              <td>2025-05-01</td>
+              <td><span class="badge bg-success">Completed</span></td>
+              <td>300</td>
+            </tr>
+            <tr>
+              <td>Physics Quiz</td>
+              <td>2025-05-05</td>
+              <td><span class="badge bg-warning text-dark">Upcoming</span></td>
+              <td>280</td>
+            </tr>
+            <tr>
+              <td>Chemistry Final</td>
+              <td>2025-05-10</td>
+              <td><span class="badge bg-danger">Pending</span></td>
+              <td>320</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="row g-4 mb-4">
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Add New Exam</h5>
+          <p>Create and schedule a new examination.</p>
+          <button class="btn btn-outline-primary">Create Exam</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Upload Results</h5>
+          <p>Submit marks and generate report cards.</p>
+          <button class="btn btn-outline-success">Upload</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card p-3">
+          <h5>Send Notifications</h5>
+          <p>Notify students about exam updates.</p>
+          <button class="btn btn-outline-warning">Send Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+      <hr>
+      <p class="text-muted">© 2025 Exam Dashboard. All rights reserved.</p>
+    </footer>
+
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
